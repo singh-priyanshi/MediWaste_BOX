@@ -1,0 +1,6 @@
+<resources>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="app_description">This app uses Object Detection to classify MEDICAL WASTE which it sees from camera and can be useful for waste management. </string>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]"> MediWaste Box </string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+</resources>

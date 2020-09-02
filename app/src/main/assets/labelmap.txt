@@ -1,0 +1,13 @@
+???
+syringe
+bottle
+pill
+surgery_blade
+thermometer
+mask
+gloves
+bandages
+ampule
+blooded-cotton
+PPE
+oxygen_mask
