@@ -72,8 +72,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="R"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Radioactive Waste" />
 
                 </LinearLayout>
 
@@ -94,8 +94,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Python"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Organics" />
 
                 </LinearLayout>
 
@@ -116,8 +116,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="C++"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Discarded" />
 
                 </LinearLayout>
 
@@ -138,8 +138,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Java"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Recyclable Waste" />
 
                 </LinearLayout>
 
@@ -153,22 +153,22 @@
     <!-- Another Card view for displaying -->
     <!-- Use of programming languages -->
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="352dp"
         android:layout_below="@+id/cardViewGraph"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:elevation="10dp"
-        app:cardCornerRadius="10dp"
-        android:id="@+id/details">
+        app:cardCornerRadius="10dp">
 
         <!--Relative layout to display -->
         <!-- use of programming languages -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="339dp"
             android:orientation="vertical">
 
             <!--Text view to use of -->
@@ -176,27 +176,27 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Use of Programming Languages(In Percentage):"
-                android:textSize="23sp"
-                android:textStyle="bold"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:text="Composition of detected waste  (Percentage):"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <!--View to display the line-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/color_two"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"/>
+                android:background="@color/color_two" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="10dp">
 
                 <!--Text view to display R -->
@@ -204,144 +204,227 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="R"
-                    android:textSize="18sp"/>
+                    android:text="Plastic Waste"
+                    android:textSize="18sp" />
 
                 <!--Text view to display the -->
                 <!-- percentage of programming language -->
                 <!-- used. For now default set to 0-->
                 <TextView
+                    android:id="@+id/tvR"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="0"
-                    android:id="@+id/tvR"
-                    android:textAlignment="textEnd"
-                    android:textSize="18sp"
-                    android:textColor="@color/color_one"
-                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
                     android:fontFamily="sans-serif-light"
-                    android:layout_alignParentRight="true"/>
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/color_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <!--View to display the line-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/color_two"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="20dp"
+                android:background="@color/color_two" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Python"
-                    android:textSize="18sp"/>
+                    android:text="Sharp Metals"
+                    android:textSize="18sp" />
 
                 <!--Text view to display the percentage -->
                 <!-- of programming language used. -->
                 <!-- For now default set to 0-->
 
                 <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="0"
                     android:id="@+id/tvPython"
-                    android:textAlignment="textEnd"
-                    android:textSize="18sp"
-                    android:textColor="@color/color_one"
-                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:fontFamily="sans-serif-light"
-                    android:layout_alignParentRight="true"/>
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/color_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/color_two"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="20dp"
+                android:background="@color/color_two" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="C++"
-                    android:textSize="18sp"/>
+                    android:text="Glass"
+                    android:textSize="18sp" />
 
                 <!--Text view to display the percentage -->
                 <!-- of programming language used. -->
                 <!-- For now default set to 0-->
                 <TextView
+                    android:id="@+id/tvCPP"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="0"
-                    android:id="@+id/tvCPP"
-                    android:textAlignment="textEnd"
-                    android:textSize="18sp"
-                    android:textColor="@color/color_one"
-                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
                     android:fontFamily="sans-serif-light"
-                    android:layout_alignParentRight="true"/>
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/color_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/color_two"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="20dp"
+                android:background="@color/color_two" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Java"
-                    android:textSize="18sp"/>
+                    android:text="Chemical Waste"
+                    android:textSize="18sp" />
 
                 <!--Text view to display the percentage -->
                 <!-- of programming language used.-->
                 <!-- For now default set to 0-->
                 <TextView
+                    android:id="@+id/tvJava"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="0"
-                    android:id="@+id/tvJava"
-                    android:textAlignment="textEnd"
-                    android:textSize="18sp"
-                    android:textColor="@color/color_one"
-                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
                     android:fontFamily="sans-serif-light"
-                    android:layout_alignParentRight="true"/>
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/color_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/color_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Pathological Waste"
+                    android:textSize="18sp" />
+
+                <!--Text view to display the percentage -->
+                <!-- of programming language used.-->
+                <!-- For now default set to 0-->
+                <TextView
+                    android:id="@+id/tvPatho"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/color_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/color_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Incineration"
+                    android:textSize="18sp" />
+
+                <!--Text view to display the percentage -->
+                <!-- of programming language used.-->
+                <!-- For now default set to 0-->
+                <TextView
+                    android:id="@+id/tvIncin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/color_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
