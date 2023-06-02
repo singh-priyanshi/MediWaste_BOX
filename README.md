@@ -13,7 +13,7 @@ MediWaste Box is an Android mobile application that utilizes machine learning to
 1. To install MediWaste Box on your Android device, follow these steps:
 * Clone this repository to your local machine using the following command:
 ----------------------------------------------
-git clone https://github.com/your-username/mediwaste-box.git
+### git clone https://github.com/your-username/mediwaste-box.git
 ----------------------------------------------
 2. Open the project in Android Studio.
 3. Build and run the project on your Android device or emulator.
